@@ -30,7 +30,8 @@ function getValues() {
   let b = parseFloat(document.getElementById("b").value); //Number(prompt("Enter B"));
   let c = parseFloat(document.getElementById("c").value); //Number(prompt("Enter C"));
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    alert("Input values please");
+    document.getElementById("solve").innerHTML = " ";
+    alert("Input values please!");
   } else {
     let values = [a, b, c];
     return values;
