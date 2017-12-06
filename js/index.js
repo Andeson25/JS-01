@@ -1,12 +1,4 @@
-console.log("Hello world!");
 
-var messageForUser = "Hello World!";
-document.write(messageForUser);
-
-var userAge = 20;
-document.write("<br>" + messageForUser + "\n" + userAge);
-
-let userProfession = "Developer";
-document.write("<br>" + messageForUser + " " + userProfession + " " + userAge);
-
-const favouriteColor = "red";
+const  userName = prompt("What is your name?", "Your name...");
+const greetings = "Hello " + userName;
+document.write(greetings);
