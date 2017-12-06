@@ -1,3 +1,7 @@
 console.log("Hello world!");
-var message = "Hello World!";
-alert(message);
+var messageForUser = "Hello World!";
+document.write(messageForUser);
+var userAge = 20;
+document.write("<br>" + messageForUser + "\n" + userAge);
+let userProfession = "Developer";
+document.write('<br>'+userProfession);
