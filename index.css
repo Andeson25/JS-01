@@ -12,7 +12,7 @@ body {
 section {
   margin: 0;
   background-size: cover;
-  background-color: rgb(42, 104, 44);
+  background-color:#aabaa2;
   background-position: center center;
   background-size: cover;
 }
@@ -21,7 +21,7 @@ h1 {
   padding: 0;
 }
 button {
-  background-color: #4caf50;
+  background-color: #6c7e7d;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -33,7 +33,7 @@ button {
   cursor: pointer;
 }
 input {
-  background-color: rgb(42, 104, 44);
+  background-color: #aabaa2;
   text-align: center;
   font-size: 100%;
   font-weight: bold;
