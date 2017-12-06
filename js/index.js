@@ -26,18 +26,19 @@
 // document.write(sum(fun, 10, 10, 10));
 
 function solveQuadr() {
-  const a = document.getElementById("a").value; //Number(prompt("Enter A"));
+  let a = document.getElementById("a").value; //Number(prompt("Enter A"));
 
-  const b = +document.getElementById("b").value; //Number(prompt("Enter B"));
+  let b = +document.getElementById("b").value; //Number(prompt("Enter B"));
 
-  const c = +document.getElementById("c").value; //Number(prompt("Enter C"));
+  let c = +document.getElementById("c").value; //Number(prompt("Enter C"));
 
-  const d = b ** 2 - 4 * a * c;
-  const x1 = (-b + Math.sqrt(d)) / 2 * a;
+  let d = b ** 2 - 4 * a * c;
+  
+  let x1 = (-b + Math.sqrt(d)) / 2 * a;
 
-  const x2 = (-b - Math.sqrt(d)) / 2 * a;
+  let x2 = (-b - Math.sqrt(d)) / 2 * a;
 
-  const result = "x1 = " + x1 + "; x2 = " + x2+";";
+  let result = "x1 = " + x1 + "; x2 = " + x2+";";
 
   return result;
 }
