@@ -24,19 +24,24 @@
 //   return funPtr(a, b) + a + b + c;
 // }
 // document.write(sum(fun, 10, 10, 10));
-const a = Number(prompt("Enter A"));
-const b = Number(prompt("Enter B"));
-const c = Number(prompt("Enter C"));
-function disc(_a, _b, _c) {
-  return _b ** 2  - 4 * _a * _c;
-}
-function solveQuadr(a,b,c) {
-  const d = disc(a, b, c);
+
+function solveQuadr() {
+  const a = document.getElementById("a").value; //Number(prompt("Enter A"));
+
+  const b = +document.getElementById("b").value; //Number(prompt("Enter B"));
+
+  const c = +document.getElementById("c").value; //Number(prompt("Enter C"));
+
+  const d = b ** 2 - 4 * a * c;
   const x1 = (-b + Math.sqrt(d)) / 2 * a;
+
   const x2 = (-b - Math.sqrt(d)) / 2 * a;
-  var result = "x1="+x1 + " x2=" + x2;
-    return result;
+
+  const result = "x1 = " + x1 + "; x2 = " + x2+";";
+
+  return result;
 }
-var endl="<br>"
-document.write(endl)
-document.write("<h1>"+"Solve:"+endl+solveQuadr(a,b,c)+"<h1>");
+function printResult() {
+  
+  document.getElementById("solve").innerHTML = "Here is the solve: <br>"+solveQuadr();
+}

@@ -8,13 +8,21 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="text-align:center;">
     <h1>
         Hello!
+        <br> Try a=1, b=-8, c=12;
         <br>
-        Try a=1, b=-8, c=12;
+
+        <input id="a" type="number" value="a">
+
+
+        <input id="b" type="number" value="b">
+
+        <input id="c" type="number" value="c">
     </h1>
-    
+    <button style="height:30px; width:60px;" onclick="printResult()">Solve</button>
+    <h1 id="solve"></h1>
     <script src="js/index.js">
     </script>
 
