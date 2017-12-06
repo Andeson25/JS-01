@@ -37,4 +37,6 @@ function solveQuadr(a,b,c) {
   var result = "x1="+x1 + " x2=" + x2;
     return result;
 }
-document.write(solveQuadr(a,b,c));
+var endl="<br>"
+document.write(endl)
+document.write("<h1>"+"Solve:"+endl+solveQuadr(a,b,c)+"<h1>");
