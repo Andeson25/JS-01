@@ -1,9 +1,24 @@
-const userName = prompt("What is your name?", "Your name...");
-const greetings = "Hello " + userName;
-document.write(greetings);
+// const userName = prompt("What is your name?", "Your name...");
+// const greetings = "Hello " + userName;
+// document.write(greetings);
+// const endl = "<br>";
+    // document.write(endl);
 
-document.write("<br>");
+// const userAge = parseFloat(prompt("What is youtr age?"));
+// const nextAge = userAge + 1;
+// document.write("You are  " + userAge+" years old");
 
-const userAge = prompt("What is youtr age?");
-const nextAge = +userAge + 1;
-document.write("Next year you will be "+ nextAge);
+// if (isNaN(userAge)) {
+//   document.write(endl + "User age is Nan");
+// } else {
+//   if (userAge < 18) {
+//     document.write(endl + "Child");
+//   } else {
+//     document.write(endl + "Adult");
+//   }
+// }
+ function sum(a,b) {
+     return a+b;
+ }
+
+document.write(sum(4,10));
