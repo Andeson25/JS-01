@@ -57,5 +57,5 @@ function solveQuadr() {
 }
 function printResult() {
   document.getElementById("solve").innerHTML =
-    "Here is the solve: <br>" + solveQuadr() + "<br>" + "Goodbye";
+    "Here is the solve: <br>" + solveQuadr() + "<br>" + "Goodbye!";
 }
