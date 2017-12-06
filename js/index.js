@@ -25,24 +25,31 @@
 // }
 // document.write(sum(fun, 10, 10, 10));
 
+function getValues() {
+  let a = parseFloat(document.getElementById("a").value); //Number(prompt("Enter A"));
+  let b = parseFloat(document.getElementById("b").value); //Number(prompt("Enter B"));
+  let c = parseFloat(document.getElementById("c").value); //Number(prompt("Enter C"));
+  let values = [a, b, c];
+  return values;
+}
+function calcDics(a, b, c) {
+  let res = b ** 2 - 4 * a * c;
+  return res;
+}
 function solveQuadr() {
-  let a = document.getElementById("a").value; //Number(prompt("Enter A"));
+  let values = getValues();
 
-  let b = +document.getElementById("b").value; //Number(prompt("Enter B"));
+  let d = calcDics(values[0], values[1], values[2]);
 
-  let c = +document.getElementById("c").value; //Number(prompt("Enter C"));
+  let x1 = (-values[1] + Math.sqrt(d)) / 2 * values[0];
 
-  let d = b ** 2 - 4 * a * c;
-  
-  let x1 = (-b + Math.sqrt(d)) / 2 * a;
+  let x2 = (-values[1] - Math.sqrt(d)) / 2 * values[0];
 
-  let x2 = (-b - Math.sqrt(d)) / 2 * a;
-
-  let result = "x1 = " + x1 + "; x2 = " + x2+";";
+  let result = "x1 = " + x1 + "; x2 = " + x2 + ";";
 
   return result;
 }
 function printResult() {
-  
-  document.getElementById("solve").innerHTML = "Here is the solve: <br>"+solveQuadr();
+  document.getElementById("solve").innerHTML =
+    "Here is the solve: <br>" + solveQuadr();
 }
