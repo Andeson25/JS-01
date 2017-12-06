@@ -4,30 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
-<body style="text-align:center;">
+<body>
     <h1>
         Hello!
         <br> Try a=1, b=-8, c=12;
         <br>
-
-        <input style="height:30px; width:60px;" id="a" type="number" value="a">
-
-
-        <input style="height:30px; width:60px;" id="b" type="number" value="b">
-
-        <input style="height:30px; width:60px;" id="c" type="number" value="c">
+        x<sup>2</sup><input id="a" type="text" value="">
+        +
+        <input id="b" type="text" value="">
+        x
+        +
+        <input id="c" type="text" value="">
+        =0
+        
     </h1>
-    <button style="height:30px; width:60px;" onclick="printResult()">Solve</button>
+    <button  onclick="printResult()">Solve</button>
     <h1 id="solve"></h1>
     <script src="js/index.js">
     </script>
-
-    <h1>Goodbye.</h1>
-
 </body>
 
 </html>

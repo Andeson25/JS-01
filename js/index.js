@@ -40,7 +40,13 @@ function solveQuadr() {
   let values = getValues();
 
   let d = calcDics(values[0], values[1], values[2]);
-
+  if (d < 0) {
+    return "No solves, D<0";
+  }
+  if (d===0) {
+      let result="x=" +(-values[1]/2*values[0]);
+      return result;
+  }
   let x1 = (-values[1] + Math.sqrt(d)) / 2 * values[0];
 
   let x2 = (-values[1] - Math.sqrt(d)) / 2 * values[0];
@@ -51,5 +57,5 @@ function solveQuadr() {
 }
 function printResult() {
   document.getElementById("solve").innerHTML =
-    "Here is the solve: <br>" + solveQuadr();
+    "Here is the solve: <br>" + solveQuadr() + "<br>" + "Goodbye";
 }
