@@ -1,16 +1,22 @@
 body {
+    margin: 0;
   text-align: center;
   font-family: sans-serif;
-  box-sizing: border-box;
-  border: 5px solid black;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  width: 258px;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: grey;
+  box-sizing: border-box;   
+  display: grid;
+    justify-content: center;
+    align-content: center;
+    
+
 }
 section {
+  height: fit-content;
+  width: fit-content;
   margin: 0;
+  border: 5px solid black;
   background-size: cover;
   background-color:#aabaa2;
   background-position: center center;
