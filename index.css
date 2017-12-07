@@ -21,8 +21,8 @@ section {
   background-size: cover;
 }
 h1 {
-  margin: 0;
-  padding: 0;
+  margin: 0 0;
+  padding: 5px 5px;
 }
 button {
   background-color: #6c7e7d;
