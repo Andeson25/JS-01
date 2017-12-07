@@ -1,24 +1,22 @@
 body {
-    margin: 0;
+  padding: 0 0;
+  margin: 0 0;
   text-align: center;
   font-family: sans-serif;
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100%;
   background-color: grey;
-  box-sizing: border-box;   
+  box-sizing: border-box;
   display: grid;
-    justify-content: center;
-    align-content: center;
-    
-
+  justify-content: center;
+  align-content: center;
 }
 section {
   height: fit-content;
   width: fit-content;
-  margin: 0;
   border: 5px solid black;
   background-size: cover;
-  background-color:#aabaa2;
+  background-color: #aabaa2;
   background-position: center center;
   background-size: cover;
 }
