@@ -10,10 +10,7 @@ function getValues() {
     return values;
   }
 }
-function calcDics(a, b, c) {
-  let res = b ** 2 - 4 * a * c;
-  return res;
-}
+
 function solveQuadr() {
   let values = getValues();
   let d = calcDics(values[0], values[1], values[2]);
@@ -28,8 +25,12 @@ function solveQuadr() {
 
   let x2 = Math.round((-values[1] - Math.sqrt(d)) / 2 * values[0] * 100) / 100;
 
-  let result = `x1 =   ${x1} <br> x2 =   ${x2} `;
+  let result = `x1 =${x1} <br> x2 =${x2} `;
   return result;
+}
+function calcDics(a, b, c) {
+  let res = b ** 2 - 4 * a * c;
+  return res;
 }
 function printResult() {
   document.getElementById(
