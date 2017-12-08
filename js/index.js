@@ -4,7 +4,7 @@ function getValues() {
   let c = parseFloat(document.getElementById("c").value);
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
     document.getElementById("solve").innerHTML = " ";
-    alert("Input values please!");
+    alert(`Input values please!`);
   } else {
     let values = [a, b, c];
     return values;
@@ -15,7 +15,7 @@ function solveQuadr() {
   let values = getValues();
   let d = calcDics(values[0], values[1], values[2]);
   if (d < 0) {
-    return "No solves, D<0";
+    return `No solves, D<0`;
   }
   if (d === 0) {
     let result = `x=${-values[1] / 2 * values[0]}`;
