@@ -21,9 +21,9 @@ function solveQuadr() {
     let result = `x=${-values[1] / 2 * values[0]}`;
     return result;
   }
-  let x1 = Math.round((-values[1] + Math.sqrt(d) / (2 * values[0])) * 100) / 100;
+  let x1 = Math.round((-values[1] + Math.sqrt(d)) / (2 * values[0]) * 100) / 100;
 
-  let x2 = Math.round((-values[1] - Math.sqrt(d) / (2 * values[0])) * 100) / 100;
+  let x2 = Math.round((-values[1] - Math.sqrt(d)) / (2 * values[0]) * 100) / 100;
 
   let result = `x1 =${x1} <br> x2 =${x2} `;
   return result;
