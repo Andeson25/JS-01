@@ -1,39 +1,37 @@
 function getValues() {
-  let a = parseFloat(document.getElementById("a").value);
-  let b = parseFloat(document.getElementById("b").value);
-  let c = parseFloat(document.getElementById("c").value);
+  const a = parseFloat(document.getElementById("a").value);
+  const b = parseFloat(document.getElementById("b").value);
+  const c = parseFloat(document.getElementById("c").value);
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
-    document.getElementById("solve").innerHTML = " ";
-    alert(`Input values please!`);
+    document.getElementById(
+      "solve"
+    ).innerHTML = `<h1 style="color:red">Input values!</h1>`;
   } else {
-    let values = [a, b, c];
-    return values;
+    return [a, b, c];
   }
 }
-
 function solveQuadr() {
-  let values = getValues();
-  let d = calcDics(values[0], values[1], values[2]);
+  const [a, b, c] = getValues();
+  const d = calcDics(a, b, c);
   if (d < 0) {
     return `No solves, D<0`;
   }
   if (d === 0) {
-    let result = `x=${-values[1] / 2 * values[0]}`;
+    let result = `x=${-b / 2 * a}`;
     return result;
   }
-  let x1 = Math.round((-values[1] + Math.sqrt(d)) / (2 * values[0]) * 100) / 100;
+  const x1 = Math.round((-b + Math.sqrt(d)) / (2 * a) * 100) / 100;
 
-  let x2 = Math.round((-values[1] - Math.sqrt(d)) / (2 * values[0]) * 100) / 100;
+  const x2 = Math.round((-b - Math.sqrt(d)) / (2 * a) * 100) / 100;
 
-  let result = `x1 = ${x1} <br> x2 = ${x2} `;
-  return result;
+  return `x1 = ${x1} <br> x2 = ${x2} `;
 }
 function calcDics(a, b, c) {
-  let res = b ** 2 - 4 * a * c;
-  return res;
+  return b ** 2 - 4 * a * c;
 }
 function printResult() {
   document.getElementById(
     "solve"
   ).innerHTML = `Here is the solve: <br> ${solveQuadr()}  <br>  Goodbye!`;
 }
+document.getElementById(`button`).addEventListener(`click`, printResult);

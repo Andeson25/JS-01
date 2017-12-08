@@ -1,27 +1,21 @@
 body {
-  padding: 0 0;
-  margin: 0 0;
   text-align: center;
   font-family: sans-serif;
   min-height: 100vh;
-  min-width: 100%;
   background-color: grey;
   box-sizing: border-box;
   display: grid;
+  grid-template: 1fr 1fr;
   justify-content: center;
   align-content: center;
 }
 section {
-  height: fit-content;
-  width: fit-content;
   border: 5px solid black;
   background-size: cover;
   background-color: #aabaa2;
-  background-position: center center;
-  background-size: cover;
 }
 h1 {
-  margin: 0 0;
+  margin: 0;
   padding: 5px 5px;
 }
 button {
@@ -29,16 +23,11 @@ button {
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
   outline: none;
   border: none;
-  box-sizing: content-box;
-  position: relative;
   box-shadow: 0 4px #5a6968;
 }
 button:hover {
@@ -53,7 +42,6 @@ button:active {
 }
 input {
   background-color: #aabaa2;
-  box-sizing: content-box;
   text-align: center;
   font-size: 100%;
   font-weight: bold;
@@ -61,7 +49,6 @@ input {
   min-width: 30px;
   max-width: 50px;
   border: 3px solid black;
-  margin: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
