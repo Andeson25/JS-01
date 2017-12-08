@@ -1,8 +1,7 @@
-
 function getValues() {
-  let a = parseFloat(document.getElementById("a").value); 
-  let b = parseFloat(document.getElementById("b").value); 
-  let c = parseFloat(document.getElementById("c").value); 
+  let a = parseFloat(document.getElementById("a").value);
+  let b = parseFloat(document.getElementById("b").value);
+  let c = parseFloat(document.getElementById("c").value);
   if (isNaN(a) || isNaN(b) || isNaN(c)) {
     document.getElementById("solve").innerHTML = " ";
     alert("Input values please!");
@@ -22,19 +21,18 @@ function solveQuadr() {
     return "No solves, D<0";
   }
   if (d === 0) {
-    let result = "x=" + -values[1] / 2 * values[0];
+    let result = `x=${-values[1] / 2 * values[0]}`;
     return result;
   }
-
   let x1 = Math.round((-values[1] + Math.sqrt(d)) / 2 * values[0] * 100) / 100;
 
   let x2 = Math.round((-values[1] - Math.sqrt(d)) / 2 * values[0] * 100) / 100;
 
-  let result = "x1 = " + x1 + ";<br> x2 = " + x2 + ";";
-
+  let result = `x1 =   ${x1} ; <br> x2 =   ${x2} `;
   return result;
 }
 function printResult() {
-  document.getElementById("solve").innerHTML =
-    "Here is the solve: <br>" + solveQuadr() + "<br>" + "Goodbye!";
+  document.getElementById(
+    "solve"
+  ).innerHTML = `Here is the solve: <br> ${solveQuadr()}  <br>  Goodbye!`;
 }
