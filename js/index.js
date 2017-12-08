@@ -34,4 +34,10 @@ function printResult() {
     "solve"
   ).innerHTML = `Here is the solve: <br> ${solveQuadr()}  <br>  Goodbye!`;
 }
+document.querySelector('body').addEventListener('keypress', function (e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) { 
+    printResult();
+  }
+});
 document.getElementById(`button`).addEventListener(`click`, printResult);
