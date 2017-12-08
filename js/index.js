@@ -28,7 +28,7 @@ function solveQuadr() {
 
   let x2 = Math.round((-values[1] - Math.sqrt(d)) / 2 * values[0] * 100) / 100;
 
-  let result = `x1 =   ${x1} ; <br> x2 =   ${x2} `;
+  let result = `x1 =   ${x1} <br> x2 =   ${x2} `;
   return result;
 }
 function printResult() {
